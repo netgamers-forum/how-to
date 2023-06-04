@@ -2,7 +2,7 @@
    
    [How to run an Ubuntu Desktop virtual machine using VirtualBox 7 | Ubuntu](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview)
 
-2. - Errore di mancanza di dipendenze per virtualbox di python in fase di installazione?
+2. Errore di mancanza di dipendenze per virtualbox di python in fase di installazione?
    
    - [Download Python | Python.org](https://www.python.org/downloads/)
    
