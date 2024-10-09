@@ -42,7 +42,7 @@
 
 9. Cliccare su **autorun.sh** e fare “esegui come programma”, lasciar eseguire fino a termine.
 
-10. Copiate il contenuto di [questo link](https://raw.githubusercontent.com/DanieleMancini/install-rails/main/linux)
+10. Copiate il contenuto di [questo link](https://raw.githubusercontent.com/netgamers-forum/how-to/refs/heads/main/dependencies/install-rails-linux)
     
     aprite un file di testo incollate e salvate come nomefile.sh (magari nel desktop).
     
