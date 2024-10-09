@@ -1,0 +1,17 @@
+1. Access the production server and get a copy of `/var/discourse/containers/app.yml`
+2. Get a copy of the ssl certificates used in production. They should be wildcard certificate.
+    If you cannot, it's fine, just use the letsencrypt template when creating staging and choose a free domain name to use.
+3. Get the credentials for an email account to be used. They should be in the `app.yml` already.
+4. Access the staging server and follow the instructions [here](https://github.com/discourse/discourse/blob/main/docs/INSTALL-cloud.md)
+5. Skip step 1, 2, 3 and 4. You are done already unless you need to set up via letsencrypt, in that case, follow step 1.
+6. Follow step 5 & 6.
+7. Skip step 7, instead use this command: `./discourse-setup --skip-rebuild --skip-connection-test`. If you needed to use letsencrypt, do not add the `--skip-connection-test`. Run the command now.
+    This will create a new `app.yml` file in the staging environment.
+8. Now `cat` that yaml and compare it to the one in production. Adjust the staging one to be the same as production in term of plugins. Everything else might be different as they are parameters that depend on the VM hardware.
+9. If you have them, add the ssl certificate by doing the following:
+    `mkdir -p /var/discourse/shared/standalone/ssl`
+    `cp ~/ssl/* /var/discourse/shared/standalone/ssl` (instead of `~/ssl` use wherever you copied the certificates in the first place)
+10. Now build discourse with `./launcher rebuild app` and wait for it to finish
+11. Access the URL chosen in the setup and use the email for admin that you used in the setup process
+12. ???
+13. Profit
